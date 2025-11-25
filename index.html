@@ -6,12 +6,171 @@
         <title>Project 02</title>
 
         <!-- Embed Font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+            rel="stylesheet"
+        />
 
         <!-- Reset Css -->
         <link rel="stylesheet" href="assets/css/reset.css" />
         <link rel="stylesheet" href="assets/css/style.css" />
     </head>
     <body>
-        <h1>Hello Word</h1>
+        <header class="header fixed">
+            <div class="container">
+                <!-- Header Inner -->
+                <div class="header__inner">
+                    <!-- Logo -->
+                    <a href="/">
+                        <img
+                            src="./assets/icon/Logo.png"
+                            alt="Besnik."
+                            class="header__logo"
+                        />
+                    </a>
+
+                    <!-- Navbar -->
+                    <nav class="header__nav">
+                        <ul class="header__nav-list">
+                            <li class="header__nav-item">
+                                <a
+                                    href="#!"
+                                    class="header__nav-link header__nav-link--active"
+                                    >Home</a
+                                >
+                            </li>
+                            <li class="header__nav-item">
+                                <a href="#!" class="header__nav-link"
+                                    >Features</a
+                                >
+                            </li>
+                            <li class="header__nav-item">
+                                <a href="#!" class="header__nav-link"
+                                    >Pricing</a
+                                >
+                            </li>
+                            <li class="header__nav-item">
+                                <a href="#!" class="header__nav-link">About</a>
+                            </li>
+                            <li class="header__nav-item">
+                                <a href="#!" class="header__nav-link"
+                                    >Contact</a
+                                >
+                            </li>
+                        </ul>
+                    </nav>
+
+                    <!-- Actions -->
+                    <div class="header__action">
+                        <a href="#!" class="header__btn--signin">Sign in</a>
+                        <a href="#!" class="btn header__btn--signup">Sign up</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Hero -->
+        <section class="hero">
+            <div class="container">
+                <div class="hero__inner">
+                    <!-- Hero Left -->
+                    <div class="hero__content">
+                        <span class="hero__tag">😎 EASY LEAENING PLATFORM</span>
+                        <h1 class="hero__title">Words learner come here.</h1>
+                        <p class="hero__desc">
+                            Build skills with courses, certificates, and get
+                            online knowledge from our <br />
+                            world-class platform.
+                        </p>
+
+                        <div class="hero__actions">
+                            <a href="#!" class="btn">Get Started</a>
+                            <button class="hero__btn">
+                                <div class="hero__icon">
+                                    <img src="./assets/icon/play.svg" alt="" />
+                                </div>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Hero Right -->
+                    <div class="hero__media">
+                        <img
+                            src="./assets/img/hero.png"
+                            alt="Words learner come here"
+                            class="hero__image"
+                        />
+                        <div class="hero__card hero__card--courses">
+                            <div class="hero__card-courses">
+                                <div class="hero__card-icon">
+                                    <img src="./assets/icon/Book.svg" alt="" />
+                                </div>
+                                <div class="hero__card-info">
+                                    <p class="hero__card-title">
+                                        Courses 1000+
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="hero__card hero__card--schedule">
+                            <h3 class="hero__card-title">Schedules</h3>
+                            <div class="hero__card-list">
+                                <div class="hero__card-item">
+                                    <div
+                                        style="--w: 52%"
+                                        class="hero__card-fill"
+                                    ></div>
+                                </div>
+                                <div class="hero__card-item">
+                                    <div
+                                        style="--w: 69%"
+                                        class="hero__card-fill"
+                                    ></div>
+                                </div>
+                                <div class="hero__card-item">
+                                    <div
+                                        style="--w: 45%"
+                                        class="hero__card-fill"
+                                    ></div>
+                                </div>
+                                <div class="hero__card-bottom"></div>
+                            </div>
+                        </div>
+                        <div class="hero__card hero__card--students">
+                            <h3 class="hero__card-title">
+                                Our Active Students
+                            </h3>
+                            <div class="hero__card-avatar">
+                                <img
+                                    src="./assets/img/avatart-1.jpg"
+                                    alt=""
+                                    class="hero__avatar"
+                                />
+                                <img
+                                    src="./assets/img/avatart-2.jpg"
+                                    alt=""
+                                    class="hero__avatar"
+                                />
+                                <img
+                                    src="./assets/img/avatart-3.jpg"
+                                    alt=""
+                                    class="hero__avatar"
+                                />
+                                <img
+                                    src="./assets/img/avatart-4.jpg"
+                                    alt=""
+                                    class="hero__avatar"
+                                />
+                                <div class="hero__avatar hero__avatar-desc">
+                                    10K+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </body>
 </html>
