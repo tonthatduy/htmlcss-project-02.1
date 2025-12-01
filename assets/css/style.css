@@ -438,8 +438,9 @@ a {
     transition: 0.3s;
 }
 
-.corses__image:hover {
+.courses__image:hover {
     opacity: 0.35;
+    cursor: pointer;
 }
 
 .courses__content {
@@ -556,7 +557,9 @@ a {
 }
 
 .testimonial__author {
+    position: relative;
     padding: 6px 0;
+    margin-left: 13px;
     font-weight: 500;
     line-height: 1;
     color: #5d6564;
@@ -564,6 +567,17 @@ a {
 
 .testimonial__author-name {
     color: #000000;
+}
+
+.testimonial__author-name::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: -13px;
+    width: 8px;
+    height: 2px;
+    background: #070707;
+    transform: translateY(-50%);
 }
 
 .testimonial__controls {
@@ -596,12 +610,139 @@ a {
 }
 
 .testimonial__media {
+    position: relative;
     width: 58%;
 }
 
 .testimonial__avatar {
-    width: 235px;
-    height: 235px;
+    position: absolute;
     object-fit: cover;
     border-radius: 50%;
+}
+
+.testimonial__avatar--main {
+    top: 50%;
+    left: 55%;
+    width: 235px;
+    height: 235px;
+    transform: translate(-50%, -50%);
+}
+
+.testimonial__avatar--small {
+    position: absolute;
+    width: 78px;
+    height: 78px;
+}
+
+.testimonial__avatar--medium {
+    width: 110px;
+    height: 110px;
+}
+
+.testimonial__avatar--medium-second {
+    width: 92px;
+    height: 92px;
+}
+
+.testimonial__avatar--left-bot {
+    left: 0;
+    bottom: 145px;
+}
+
+.testimonial__avatar--top-left {
+    top: 0;
+    left: 145px;
+}
+
+.testimonial__avatar--top-right {
+    top: 19px;
+    right: 0px;
+}
+
+.testimonial__avatar--bot-left {
+    bottom: 0;
+    left: 212px;
+}
+
+.testimonial__avatar--bot-right {
+    bottom: 29px;
+    right: 32px;
+}
+
+/* CTA  */
+.cta {
+    margin-top: 130px;
+    background: #def6f5;
+}
+
+.cta__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cta__inner {
+    padding: 58px 0 88px 0;
+}
+
+.cta__btn {
+    margin-right: 154px;
+}
+
+/* Footer */
+.footer {
+    padding-top: 80px;
+    margin-top: 50px;
+}
+
+.footer__inner {
+    display: flex;
+    justify-content: space-between;
+    gap: 144px;
+}
+
+.footer__groups {
+    display: flex;
+    column-gap: 144px;
+}
+
+.footer__title {
+    font-weight: 500;
+    font-size: 1.8rem;
+    line-height: 1;
+    color: #2e2e2e;
+}
+
+.footer__list {
+    margin-top: 25px;
+}
+
+.footer__item {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.footer__link {
+    line-height: 1;
+    color: #535353;
+}
+
+.footer__icon {
+    width: 20px;
+    height: 20px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 9px;
+    background: #ffffff;
+}
+
+.footer__copyright {
+    margin-top: 30px;
+    padding: 50px 0;
+    text-align: center;
+    font-size: 1.8rem;
+    line-height: 1;
+    color: #b0b5b4;
 }
